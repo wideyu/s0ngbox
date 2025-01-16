@@ -1,4 +1,4 @@
-FROM alpine
+FROM homeassistant/home-assistant:2025.1.0
 
 COPY ./content /workdir/
 
