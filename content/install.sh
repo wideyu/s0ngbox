@@ -1,7 +1,7 @@
 set -e
 
 # install ha
-python3 -m pip install wheel
+pip3 install wheel
 pip3 install homeassistant
 
 # install sing-box
