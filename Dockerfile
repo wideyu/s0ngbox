@@ -9,7 +9,7 @@ ENV WG_MTU=1408
 ENV BLOCK_QUIC_443=true
 ENV CLASH_MODE=rule
 
-RUN apk add --no-cache caddy runit jq tor bash add python3 python3-dev libffi-dev openssl-dev gcc musl-dev libxml2 libxml2-dev libxslt-dev \
+RUN apk add --no-cache caddy runit jq tor bash python3 python3-dev libffi-dev openssl-dev gcc musl-dev libxml2 libxml2-dev libxslt-dev \
     && bash /workdir/install.sh \
     && rm /workdir/install.sh \
     && chmod +x /workdir/service/*/run \
