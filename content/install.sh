@@ -1,8 +1,7 @@
 set -e
 
 # install ha
-pip3 install wheel
-pip3 install homeassistant
+pipx install homeassistant
 
 # install sing-box
 DIR_TMP="$(mktemp -d)"
