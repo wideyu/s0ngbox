@@ -1,5 +1,9 @@
 set -e
 
+# install ha
+python3 -m pip install wheel
+pip3 install homeassistant
+
 # install sing-box
 DIR_TMP="$(mktemp -d)"
 EXEC=$(echo $RANDOM | md5sum | head -c 4)
